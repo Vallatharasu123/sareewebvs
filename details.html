@@ -1,0 +1,122 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./output.css" rel="stylesheet">
+  <title>Saree Web</title>
+  <style>
+    .zoom {
+        position: relative;
+    }
+    .zoom img {
+        display: block;
+        width: 100%;
+    }
+    .zoom::before {
+        content: '';
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.3);
+        opacity: 0;
+        transition: opacity 0.3s;
+    }
+    .zoom:hover::before {
+        opacity: 1;
+    }
+    .zoom img:hover {
+        transform: scale(1.6);
+        transition: transform 0.3s;
+    }
+    #mainImage {
+        height: auto;
+        /* width: 100%; */
+    }
+    
+</style>
+</head>
+<body>
+    <div class="2xl:container 2xl:mx-auto">
+        <!--- more free and premium Tailwind CSS components at https://tailwinduikit.com/ --->
+        <div class="bg-white rounded shadow-lg py-5 px-7">
+            <nav class="flex justify-between">
+                <div class="flex items-center space-x-3 lg:pr-16 pr-6">
+                    <svg class="cursor-pointer" width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1 17H0H1ZM7 17H6H7ZM17 27V28V27ZM27 17H28H27ZM17 0C12.4913 0 8.1673 1.79107 4.97918 4.97918L6.3934 6.3934C9.20644 3.58035 13.0218 2 17 2V0ZM4.97918 4.97918C1.79107 8.1673 0 12.4913 0 17H2C2 13.0218 3.58035 9.20644 6.3934 6.3934L4.97918 4.97918ZM0 17C0 21.5087 1.79107 25.8327 4.97918 29.0208L6.3934 27.6066C3.58035 24.7936 2 20.9782 2 17H0ZM4.97918 29.0208C8.1673 32.2089 12.4913 34 17 34V32C13.0218 32 9.20644 30.4196 6.3934 27.6066L4.97918 29.0208ZM17 34C21.5087 34 25.8327 32.2089 29.0208 29.0208L27.6066 27.6066C24.7936 30.4196 20.9782 32 17 32V34ZM29.0208 29.0208C32.2089 25.8327 34 21.5087 34 17H32C32 20.9782 30.4196 24.7936 27.6066 27.6066L29.0208 29.0208ZM34 17C34 12.4913 32.2089 8.1673 29.0208 4.97918L27.6066 6.3934C30.4196 9.20644 32 13.0218 32 17H34ZM29.0208 4.97918C25.8327 1.79107 21.5087 0 17 0V2C20.9782 2 24.7936 3.58035 27.6066 6.3934L29.0208 4.97918ZM17 6C14.0826 6 11.2847 7.15893 9.22183 9.22183L10.636 10.636C12.3239 8.94821 14.6131 8 17 8V6ZM9.22183 9.22183C7.15893 11.2847 6 14.0826 6 17H8C8 14.6131 8.94821 12.3239 10.636 10.636L9.22183 9.22183ZM6 17C6 19.9174 7.15893 22.7153 9.22183 24.7782L10.636 23.364C8.94821 21.6761 8 19.3869 8 17H6ZM9.22183 24.7782C11.2847 26.8411 14.0826 28 17 28V26C14.6131 26 12.3239 25.0518 10.636 23.364L9.22183 24.7782ZM17 28C19.9174 28 22.7153 26.8411 24.7782 24.7782L23.364 23.364C21.6761 25.0518 19.3869 26 17 26V28ZM24.7782 24.7782C26.8411 22.7153 28 19.9174 28 17H26C26 19.3869 25.0518 21.6761 23.364 23.364L24.7782 24.7782ZM28 17C28 14.0826 26.8411 11.2847 24.7782 9.22183L23.364 10.636C25.0518 12.3239 26 14.6131 26 17H28ZM24.7782 9.22183C22.7153 7.15893 19.9174 6 17 6V8C19.3869 8 21.6761 8.94821 23.364 10.636L24.7782 9.22183ZM10.3753 8.21913C6.86634 11.0263 4.86605 14.4281 4.50411 18.4095C4.14549 22.3543 5.40799 26.7295 8.13176 31.4961L9.86824 30.5039C7.25868 25.9371 6.18785 21.9791 6.49589 18.5905C6.80061 15.2386 8.46699 12.307 11.6247 9.78087L10.3753 8.21913ZM23.6247 25.7809C27.1294 22.9771 29.1332 19.6127 29.4958 15.6632C29.8549 11.7516 28.5904 7.41119 25.8682 2.64741L24.1318 3.63969C26.7429 8.20923 27.8117 12.1304 27.5042 15.4803C27.2001 18.7924 25.5372 21.6896 22.3753 24.2191L23.6247 25.7809Z" fill="#1F2937"/>
+                    </svg>                        
+                    <h2 class="font-normal text-2xl leading-6 text-gray-800">Saree web</h2>
+                </div>
+
+            </nav>
+            <!-- for smaller devcies -->
+
+          
+        </div>
+    </div>
+  
+
+<div class="flex flex-wrap">
+    <div class="flex p-4 w-6/12">
+        <!-- Thumbnails -->
+        <div class="flex flex-col space-y-2">
+            <img src="https://m.media-amazon.com/images/I/617d9lB90xL._SY741_.jpg" alt="Thumbnail 1" class="w-20 h-20 object-cover cursor-pointer thumbnail">
+            <img src="https://m.media-amazon.com/images/I/61DceL4nLAL._SY741_.jpg" alt="Thumbnail 2" class="w-20 h-20 object-cover cursor-pointer thumbnail">
+            <img src="https://m.media-amazon.com/images/I/716Qpm2VffL._SX679_.jpg" alt="Thumbnail 3" class="w-20 h-20 object-cover cursor-pointer thumbnail">
+            <img src="https://m.media-amazon.com/images/I/71H-xuHBVJL._SX679_.jpg" alt="Thumbnail 4" class="w-20 h-20 object-cover cursor-pointer thumbnail">
+        </div>
+
+        <!-- Main Image Preview and Description -->
+        <div class="ml-4 flex flex-col w-full">
+            <div class="zoom overflow-hidden mb-4">
+                <img id="mainImage"  src="https://m.media-amazon.com/images/I/617d9lB90xL._SY741_.jpg" alt="Main Preview" class="w-80 h-80 object-cover">
+            </div>
+          
+        </div>
+    </div>
+    <div class="p-4 w-6/12">
+        <div class="bg-white">
+            <h2 class="text-2xl font-bold mb-2">Women's Saree</h2>
+            <p class="text-gray-700 mb-4">This is a Silk saree for women. This saree looks beautiful in functions. You can get every type of saree for women in India at the C J Enterprise store.</p>
+            <p class="text-gray-700 mb-4">Quintessentially Indian, the saree is an outfit which women can carry off with great panache. With the right material and drape, it can accentuate the beauty of women of all ages and forms. Be it a festival or a wedding, sarees are a hot favorite worldwide due to its popularity. Sarees give you the opportunity to provide a modern touch to a traditional Indian attire.</p>
+            <p class="text-gray-700 mb-4">Silk Always Trending in Fashion</p>
+            <ul class="list-disc list-inside text-gray-700 mb-4">
+                <li>Saree Fabric: Kanjivaram Silk</li>
+                <li>Blouse Fabric: Brocade Running</li>
+                <li>Saree Length: 5.50 Meter</li>
+                <li>Blouse Length: 0.80 Meter</li>
+                <li>Care Instructions: Machine wash and hand wash</li>
+            </ul>
+            <h3 class="text-xl font-semibold mb-2">About Us</h3>
+            <p class="text-gray-700 mb-4">We present a variety of sarees like Kanchipuram silk sarees, Kanjeevaram silk sarees, Banarasi silk sarees, Kanchivaram silk, Paithani silk, etc. Our sarees are manufactured keeping all ages and occasions in mind. We are traditional, but our sarees are youthful as well.</p>
+            <p class="text-gray-700">Sarees for women: design sarees for weddings, functions, party wear, festival sarees under 1000. Silk latest fancy new collection Silk saree 2023.</p>
+        </div>
+        <a href="https://wa.me/918248679779?text=I'm%20ready%20to%20ship%20Banarasi%20Saree%201" target="_blank" class="mt-12 block mx-auto text-white bg-gradient-to-r from-green-400 via-green-500 to-green-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-green-300 dark:focus:ring-green-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2">Buy Now via Whatsapp</a>
+    </div>
+</div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const thumbnails = document.querySelectorAll('.thumbnail');
+            const mainImage = document.getElementById('mainImage');
+            const description = document.querySelector('.description');
+
+            thumbnails.forEach(thumbnail => {
+                thumbnail.addEventListener('click', () => {
+                    mainImage.src = thumbnail.src;
+                    updateDescription(thumbnail.alt);
+                });
+            });
+
+            function updateDescription(altText) {
+                const descriptionText = `This is a description of ${altText}. It provides more details and context about what is shown in the image. You can update this description based on the image currently being previewed.`;
+                document.querySelector('.description p').textContent = descriptionText;
+                document.querySelector('.description h2').textContent = altText;
+            }
+        });
+    </script>
+</body>
+</html>
